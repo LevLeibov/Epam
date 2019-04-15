@@ -1,6 +1,7 @@
 package com.java.epam;
 
 import  com.java.epam.command.*;
+import com.java.epam.profile.ProfileController;
 import com.java.epam.profile.ProfileModel;
 import com.java.epam.profile.ProfileView;
 
@@ -13,7 +14,8 @@ public class Application {
         //ACommand command = CommandRegistry.INSTANCE.getCommand(currentName);
         //command.execute();
         //ProfileView view = new ProfileView();
-
+        ProfileController profileController = new ProfileController();
+        profileController.showProfile(1);
 
     }
 }

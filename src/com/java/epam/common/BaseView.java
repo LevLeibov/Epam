@@ -1,14 +1,15 @@
 package com.java.epam.common;
 
 
-public class BaseView {
+public abstract class BaseView {
     protected BaseModel model;
-    public void draw(){
 
-        System.out.println("Draw view"); //перегрузка метода draw
+    public void draw(){
+        System.out.println("Drawing should be implemented...");
+
     }
-    public void draw(Canvas canvas){
-        System.out.println("Draw" + canvas);
+    public void draw (Canvas canvas) {
+        System.out.println("Drawing on canvas should be implemented...");
     }
 
     public void setModel(BaseModel model){

@@ -3,9 +3,24 @@ package com.java.epam.profile;
 import com.java.epam.common.Canvas;
 
 public class ConsoleCanvas extends Canvas {
-    public void drawInput(String input){
-        System.out.println("input");
+
+    @Override
+    public void drawText(String text) {
+        System.out.println(text);
     }
 
+    @Override
+    public void drawSquare(int size) {
+        if (size < 2) {
+            System.out.println("No square of such size allowed");
+        }
+        System.out.print("\n");
+        for (int i = 0; i < size; i++) {
+            System.out.print("#");
+        }
 
+        for (int i = 0; i < size - 1; i++) {
+            System.out.print("");
+        }
+    }
 }

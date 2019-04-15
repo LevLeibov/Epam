@@ -1,15 +1,44 @@
 package com.java.epam.profile;
 
 public class ProfileController {
-    private ProfileModel model;
+    private ProfileModel model/*profileModel*/;
     private ProfileView view;
-    public void showProfile(int id){
-        ProfileView view = new ProfileView();
-        ProfileModel model = new ProfileModel();
-        model.setFirstname("fname");
-        model.setLastname("last");
-        model.setId(0);
-        view.setModel(model);
-        view.draw();
+    private ProfileStore store;
+    private ConsoleCanvas canvas;
+
+
+    {
+        ProfileStore.INSTANCE.loadData();
+        view = new ProfileView();
+        canvas = new ConsoleCanvas();
+
+    }
+
+    public ProfileModel getModel() {
+        return model;
+
+    }
+
+    public void setModel(ProfileModel model) {
+        this.model = model;
+    }
+
+    public ProfileView getView() {
+        return view;
+    }
+
+    public void setView(ProfileView view) {
+        this.view = view;
+    }
+
+    public void showProfile(int id) {
+        ProfileModel model = ProfileStore.INSTANCE.getProfile(id);
+        if (model == null) {
+            System.out.println("No record with id " + id);
+        } else {
+            view.setModel(model);
+            view.draw(canvas);
+
+        }
     }
 }
