@@ -2,7 +2,8 @@ package com.java.epam.common;
 
 public abstract class Canvas {
 
-    public abstract void drawText (String text);
-    public abstract void drawSquare(int size);
+    public abstract void setTextAt(int fromLeft, int fromTop,String text);
+    public abstract void drawText(String text);
+    public abstract void setSquareAt(int x,int y,int size, boolean filled);
 
 }

@@ -6,6 +6,9 @@ public class ProfileModel extends BaseModel {
     private int id;
     private String firstName;
     private String lastName;
+    private String nickname;
+    private String cityOfBirth;
+
     private boolean active;
 
     public ProfileModel(int id, String firstName, String lastName, boolean active) {
