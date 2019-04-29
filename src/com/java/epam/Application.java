@@ -1,9 +1,8 @@
 package com.java.epam;
 
 import  com.java.epam.command.*;
-import com.java.epam.db.DataBase;
-import com.java.epam.db.Record;
-import com.java.epam.db.Table;
+
+import com.java.epam.db.DBApplication;
 import com.java.epam.profile.ConsoleCanvas;
 import com.java.epam.profile.ProfileController;
 import com.java.epam.profile.ProfileModel;
@@ -21,6 +20,7 @@ public class Application {
     static public final String VERSION = "0.0.0";
 
     public static void main(String[] args) {
+        DBApplication.INSTANCE.start();
         //String currentName = "version";
         //ACommand command = CommandRegistry.INSTANCE.getCommand(currentName);
         //command.execute();
@@ -91,7 +91,8 @@ public class Application {
         }
         System.out.println("OK");
 
-       */
+       //22.04___________
+
         final String ALLOWED_DOMAIN_NAMES = "^([a-zA-Z0-9]+\\.)*[a-zA-Z]$";
 
         final String OP_GROUP = "^(SELECT|DELETE)$";
@@ -152,7 +153,12 @@ public class Application {
 
 
         }
+
+         */
+
+
     }
+
 
 }
 
