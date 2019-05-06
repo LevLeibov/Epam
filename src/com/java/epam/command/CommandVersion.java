@@ -1,6 +1,6 @@
 package com.java.epam.command;
 
-import static com.java.epam.Application.VERSION;
+import static com.java.epam.OldApplication.VERSION;
 
 public class CommandVersion extends ACommand{
     CommandVersion (String name){

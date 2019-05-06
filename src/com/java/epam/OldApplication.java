@@ -15,7 +15,7 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class Application {
+public class OldApplication {
     static public final String AUTHOR = "Lev Leibov";
     static public final String VERSION = "0.0.0";
 

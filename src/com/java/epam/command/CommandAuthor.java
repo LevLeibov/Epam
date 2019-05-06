@@ -1,6 +1,6 @@
 package com.java.epam.command;
 
-import static com.java.epam.Application.AUTHOR;
+import static com.java.epam.OldApplication.AUTHOR;
 
 public class CommandAuthor extends ACommand {
     CommandAuthor(String name){
