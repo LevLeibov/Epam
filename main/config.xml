@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<applications>
+    <application
+        name="DATABASE"
+        class="com.java.steve.dbservice.DBApplication"
+        port="6701"
+    />
+    <application
+        name="WEBCLIENT"
+        class="com.java.steve.webservice.WebClientApplication"
+        port="6703"
+    />
+    <application
+        name="APPSERVER"
+        class="com.java.steve.appserver.ServerApplication"
+        port="6702"
+    />
+</applications>
