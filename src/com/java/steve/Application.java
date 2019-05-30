@@ -14,7 +14,7 @@ import java.util.Map;
 
 public class Application {
     static public final String AUTHOR = "Lev Leibov";
-    static public final String VERSION = "1.0.0";
+    static public final String VERSION = "1.0.1";
     String ALLOWED_DOMAIN_NAMES = "^([a-zA-Z0-9]+\\.)+(com|org|de|gov)$";
 
     String OP_GROUP = "^(SELECT|DELETE)";
